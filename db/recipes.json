@@ -1,0 +1,260 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Aglio e Olio",
+    "instructions": "1. Boil the spaghetti in salted water until al dente.\n2. In a large pan, heat olive oil over medium heat. Add sliced garlic and cook until golden.\n3. Add red pepper flakes and stir for a few seconds.\n4. Toss the drained spaghetti in the garlic and oil mixture.\n5. Add fresh parsley and mix well. Season with salt and pepper to taste.\n6. Serve with grated Parmesan cheese on top.",
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "amount": 400,
+        "unit": "g"
+      },
+      {
+        "name": "Olive oil",
+        "amount": 60,
+        "unit": "ml"
+      },
+      {
+        "name": "Garlic",
+        "amount": 4,
+        "unit": "cloves"
+      },
+      {
+        "name": "Red pepper flakes",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Salt",
+        "amount": 1,
+        "unit": "to taste"
+      },
+      {
+        "name": "Black pepper",
+        "amount": 1,
+        "unit": "to taste"
+      },
+      {
+        "name": "Parmesan cheese",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "tags": ["vegetarian", "dairy"]
+  },
+  {
+    "id": 2,
+    "name": "Chicken Alfredo",
+    "instructions": "1. Cook the fettuccine according to package instructions.\n2. In a large pan, melt butter and add minced garlic.\n3. Stir in cream and simmer for 5 minutes.\n4. Add Parmesan and cooked chicken slices, stirring until the sauce thickens.\n5. Toss with cooked fettuccine and serve hot.",
+    "ingredients": [
+      { "name": "Fettuccine", "amount": 400, "unit": "g" },
+      { "name": "Butter", "amount": 50, "unit": "g" },
+      { "name": "Garlic", "amount": 2, "unit": "cloves" },
+      { "name": "Heavy cream", "amount": 300, "unit": "ml" },
+      { "name": "Parmesan cheese", "amount": 100, "unit": "g" },
+      { "name": "Cooked chicken breast", "amount": 2, "unit": "pieces" }
+    ],
+    "tags": ["chicken", "dairy"]
+  },
+  {
+    "id": 3,
+    "name": "Vegetable Stir Fry",
+    "instructions": "1. Heat oil in a wok and add garlic and ginger.\n2. Add chopped vegetables and stir fry for 5-7 minutes.\n3. Add soy sauce, sesame oil, and toss to coat.\n4. Serve hot over rice or noodles.",
+    "ingredients": [
+      { "name": "Mixed vegetables", "amount": 500, "unit": "g" },
+      { "name": "Soy sauce", "amount": 3, "unit": "tbsp" },
+      { "name": "Garlic", "amount": 3, "unit": "cloves" },
+      { "name": "Ginger", "amount": 1, "unit": "inch" },
+      { "name": "Sesame oil", "amount": 2, "unit": "tbsp" }
+    ],
+    "tags": ["vegan", "vegetarian"]
+  },
+  {
+    "id": 4,
+    "name": "Beef Tacos",
+    "instructions": "1. Cook ground beef in a skillet until browned.\n2. Add taco seasoning and water, then simmer for 5 minutes.\n3. Serve the beef in taco shells, topped with lettuce, cheese, and salsa.",
+    "ingredients": [
+      { "name": "Ground beef", "amount": 500, "unit": "g" },
+      { "name": "Taco seasoning", "amount": 1, "unit": "packet" },
+      { "name": "Taco shells", "amount": 8, "unit": "pieces" },
+      { "name": "Lettuce", "amount": 100, "unit": "g" },
+      { "name": "Cheddar cheese", "amount": 100, "unit": "g" },
+      { "name": "Salsa", "amount": 100, "unit": "ml" }
+    ],
+    "tags": ["red meat"]
+  },
+  {
+    "id": 5,
+    "name": "Vegan Lentil Soup",
+    "instructions": "1. Saute onions, carrots, and celery in olive oil until softened.\n2. Add lentils, tomatoes, broth, and spices.\n3. Simmer for 30-40 minutes until lentils are tender.\n4. Serve hot with fresh herbs on top.",
+    "ingredients": [
+      { "name": "Lentils", "amount": 200, "unit": "g" },
+      { "name": "Onion", "amount": 1, "unit": "piece" },
+      { "name": "Carrots", "amount": 2, "unit": "pieces" },
+      { "name": "Celery", "amount": 2, "unit": "stalks" },
+      { "name": "Vegetable broth", "amount": 1, "unit": "liter" },
+      { "name": "Canned tomatoes", "amount": 400, "unit": "g" }
+    ],
+    "tags": ["vegan", "vegetarian"]
+  },
+  {
+    "id": 6,
+    "name": "Grilled Chicken Salad",
+    "instructions": "1. Grill the chicken breasts until fully cooked, then slice.\n2. Toss mixed greens, tomatoes, cucumbers, and sliced grilled chicken in a large bowl.\n3. Drizzle with olive oil and lemon juice. Season with salt and pepper.",
+    "ingredients": [
+      { "name": "Chicken breast", "amount": 2, "unit": "pieces" },
+      { "name": "Mixed greens", "amount": 200, "unit": "g" },
+      { "name": "Tomatoes", "amount": 2, "unit": "pieces" },
+      { "name": "Cucumber", "amount": 1, "unit": "piece" },
+      { "name": "Olive oil", "amount": 2, "unit": "tbsp" },
+      { "name": "Lemon juice", "amount": 1, "unit": "tbsp" }
+    ],
+    "tags": ["chicken"]
+  },
+  {
+    "id": 7,
+    "name": "Margherita Pizza",
+    "instructions": "1. Roll out the pizza dough and spread tomato sauce over the surface.\n2. Top with mozzarella and fresh basil leaves.\n3. Bake in a preheated oven at 220�C for 12-15 minutes or until crust is golden.",
+    "ingredients": [
+      { "name": "Pizza dough", "amount": 1, "unit": "piece" },
+      { "name": "Tomato sauce", "amount": 150, "unit": "ml" },
+      { "name": "Mozzarella cheese", "amount": 200, "unit": "g" },
+      { "name": "Fresh basil", "amount": 10, "unit": "leaves" }
+    ],
+    "tags": ["vegetarian", "dairy"]
+  },
+  {
+    "id": 8,
+    "name": "Tomato Basil Pasta",
+    "instructions": "1. Cook pasta in salted water until al dente.\n2. Heat olive oil in a pan and saut� garlic.\n3. Add cherry tomatoes and cook until softened. Stir in fresh basil leaves.\n4. Toss the cooked pasta in the sauce and serve.",
+    "ingredients": [
+      { "name": "Pasta", "amount": 400, "unit": "g" },
+      { "name": "Cherry tomatoes", "amount": 300, "unit": "g" },
+      { "name": "Garlic", "amount": 3, "unit": "cloves" },
+      { "name": "Olive oil", "amount": 3, "unit": "tbsp" },
+      { "name": "Fresh basil", "amount": 1, "unit": "bunch" }
+    ],
+    "tags": ["vegetarian"]
+  },
+  {
+    "id": 9,
+    "name": "Chicken Stir Fry",
+    "instructions": "1. Heat oil in a large pan over medium-high heat.\n2. Add sliced chicken and cook until browned.\n3. Add vegetables and stir-fry for 5-7 minutes.\n4. Add soy sauce, stir well, and cook for another 2 minutes.\n5. Serve over rice.",
+    "ingredients": [
+      { "name": "Chicken breast", "amount": 500, "unit": "g" },
+      { "name": "Mixed vegetables", "amount": 300, "unit": "g" },
+      { "name": "Soy sauce", "amount": 3, "unit": "tbsp" },
+      { "name": "Cooking oil", "amount": 2, "unit": "tbsp" },
+      { "name": "Rice", "amount": 250, "unit": "g" }
+    ],
+    "tags": ["chicken", "gluten-free"]
+  },
+  {
+    "id": 10,
+    "name": "Vegetable Soup",
+    "instructions": "1. In a large pot, heat oil and saut� onions, carrots, and celery.\n2. Add diced tomatoes and broth; bring to a boil.\n3. Add remaining vegetables and simmer for 20 minutes.\n4. Season with salt and pepper, and serve hot.",
+    "ingredients": [
+      { "name": "Olive oil", "amount": 2, "unit": "tbsp" },
+      { "name": "Onion", "amount": 1, "unit": "medium" },
+      { "name": "Carrots", "amount": 2, "unit": "medium" },
+      { "name": "Celery", "amount": 2, "unit": "stalks" },
+      { "name": "Diced tomatoes", "amount": 400, "unit": "g" },
+      { "name": "Vegetable broth", "amount": 1, "unit": "L" },
+      { "name": "Mixed vegetables", "amount": 300, "unit": "g" },
+      { "name": "Salt", "amount": 1, "unit": "to taste" },
+      { "name": "Black pepper", "amount": 1, "unit": "to taste" }
+    ],
+    "tags": ["vegan", "gluten-free"]
+  },
+  {
+    "id": 11,
+    "name": "Caprese Salad",
+    "instructions": "1. Slice tomatoes and mozzarella cheese.\n2. Arrange slices on a plate, alternating between tomato and cheese.\n3. Drizzle with olive oil and balsamic vinegar.\n4. Sprinkle with fresh basil, salt, and pepper.",
+    "ingredients": [
+      { "name": "Tomatoes", "amount": 3, "unit": "large" },
+      { "name": "Mozzarella cheese", "amount": 250, "unit": "g" },
+      { "name": "Fresh basil", "amount": 1, "unit": "bunch" },
+      { "name": "Olive oil", "amount": 2, "unit": "tbsp" },
+      { "name": "Balsamic vinegar", "amount": 1, "unit": "tbsp" },
+      { "name": "Salt", "amount": 1, "unit": "to taste" },
+      { "name": "Black pepper", "amount": 1, "unit": "to taste" }
+    ],
+    "tags": ["vegetarian", "gluten-free", "dairy"]
+  },
+  {
+    "id": 12,
+    "name": "Pancakes",
+    "instructions": "1. In a bowl, mix flour, sugar, baking powder, and salt.\n2. In another bowl, whisk milk, egg, and melted butter.\n3. Combine wet and dry ingredients, and stir until just mixed.\n4. Pour batter onto a hot skillet and cook until bubbles form, then flip and cook until golden.",
+    "ingredients": [
+      { "name": "All-purpose flour", "amount": 200, "unit": "g" },
+      { "name": "Sugar", "amount": 2, "unit": "tbsp" },
+      { "name": "Baking powder", "amount": 1, "unit": "tbsp" },
+      { "name": "Salt", "amount": 1, "unit": "tsp" },
+      { "name": "Milk", "amount": 300, "unit": "ml" },
+      { "name": "Egg", "amount": 1, "unit": "large" },
+      { "name": "Butter", "amount": 30, "unit": "g" }
+    ],
+    "tags": ["vegetarian", "breakfast", "dairy"]
+  },
+  {
+    "id": 13,
+    "name": "Vegetarian Chili",
+    "instructions": "1. In a pot, heat oil and saut� onion and garlic.\n2. Add bell peppers, tomatoes, and kidney beans.\n3. Stir in chili powder, cumin, and salt.\n4. Simmer for 30 minutes and serve hot.",
+    "ingredients": [
+      { "name": "Olive oil", "amount": 2, "unit": "tbsp" },
+      { "name": "Onion", "amount": 1, "unit": "medium" },
+      { "name": "Garlic", "amount": 2, "unit": "cloves" },
+      { "name": "Bell pepper", "amount": 1, "unit": "large" },
+      { "name": "Diced tomatoes", "amount": 400, "unit": "g" },
+      { "name": "Kidney beans", "amount": 400, "unit": "g" },
+      { "name": "Chili powder", "amount": 2, "unit": "tbsp" },
+      { "name": "Ground cumin", "amount": 1, "unit": "tsp" },
+      { "name": "Salt", "amount": 1, "unit": "to taste" }
+    ],
+    "tags": ["vegan", "gluten-free", "spicy"]
+  },
+  {
+    "id": 14,
+    "name": "Tuna Salad",
+    "instructions": "1. In a bowl, combine canned tuna, diced celery, and mayonnaise.\n2. Mix well and season with salt and pepper.\n3. Serve on bread or over greens.",
+    "ingredients": [
+      { "name": "Canned tuna", "amount": 300, "unit": "g" },
+      { "name": "Celery", "amount": 2, "unit": "stalks" },
+      { "name": "Mayonnaise", "amount": 3, "unit": "tbsp" },
+      { "name": "Salt", "amount": 1, "unit": "to taste" },
+      { "name": "Black pepper", "amount": 1, "unit": "to taste" }
+    ],
+    "tags": ["gluten-free", "dairy"]
+  },
+  {
+    "id": 15,
+    "name": "Beef Tacos",
+    "instructions": "1. In a skillet, cook ground beef over medium heat until browned.\n2. Add taco seasoning and water; simmer for 5 minutes.\n3. Serve in taco shells with toppings.",
+    "ingredients": [
+      { "name": "Ground beef", "amount": 500, "unit": "g" },
+      { "name": "Taco seasoning", "amount": 1, "unit": "packet" },
+      { "name": "Water", "amount": 100, "unit": "ml" },
+      { "name": "Taco shells", "amount": 8, "unit": "pieces" },
+      { "name": "Toppings", "amount": 1, "unit": "to taste" }
+    ],
+    "tags": ["beef", "gluten-free"]
+  },
+  {
+    "id": 16,
+    "name": "Omelette",
+    "instructions": "1. Beat eggs with salt and pepper in a bowl.\n2. Heat butter in a pan over medium heat.\n3. Pour in the eggs and cook until set, adding cheese or vegetables as desired.\n4. Fold and serve warm.",
+    "ingredients": [
+      { "name": "Eggs", "amount": 3, "unit": "large" },
+      { "name": "Salt", "amount": 1, "unit": "to taste" },
+      { "name": "Black pepper", "amount": 1, "unit": "to taste" },
+      { "name": "Butter", "amount": 20, "unit": "g" },
+      { "name": "Cheese", "amount": 50, "unit": "g" }
+    ],
+    "tags": ["vegetarian", "dairy", "breakfast"]
+  }
+]

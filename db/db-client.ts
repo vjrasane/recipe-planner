@@ -1,8 +1,7 @@
 import { drizzle } from 'drizzle-orm/postgres-js'
 import postgres from 'postgres'
 import * as schema from './schema'
-import { count, eq, sql } from 'drizzle-orm'
-import { identity, sampleSize, times } from 'lodash/fp'
+import { eq, sql } from 'drizzle-orm'
 
 const { DATABASE_URL } = process.env
 

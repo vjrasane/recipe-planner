@@ -6,6 +6,8 @@ import { Recipe } from '@/db/schema';
 import axios from 'axios';
 import { FunctionComponent, useCallback, useEffect, useState } from 'react';
 import * as schema from "@/db/schema"
+import { set, stubFalse, times, truncate } from "lodash/fp";
+import { Switch } from "@/components/ui/switch";
 
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -15,11 +17,17 @@ const fetchRecipes = async (count: number, excludeIds: number[]): Promise<schema
 }
 export const WeeklyRecipePlanner: FunctionComponent<{ initialRecipes: Recipe[] }> = ({ initialRecipes }) => {
   const [recipes, setRecipes] = useState<Recipe[]>(initialRecipes)
+  const [disabledDays, setDisabledDays] = useState<boolean[]>(() => times(stubFalse, daysOfWeek.length))
   const randomizeAll = useCallback(async () => {
     const recipes = await fetchRecipes(daysOfWeek.length, [])
     setRecipes(recipes)
   }, [])
 
+  const randomizeOne = useCallback(async (index: number) => {
+    const [recipe] = await fetchRecipes(1, [])
+    if (!recipe) return
+    setRecipes(set(index, recipe))
+  }, [])
 
   return (
     <div className="container mx-auto p-4">
@@ -30,27 +38,35 @@ export const WeeklyRecipePlanner: FunctionComponent<{ initialRecipes: Recipe[] }
       <div className="space-y-4">
         {recipes.map((recipe, index) => {
           const day = daysOfWeek[index]
+          const disabled = disabledDays[index]
 
           return (
-            <div key={day} className="space-y-2">
-              <h2 className="text-xl font-semibold">{day}</h2>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle>{recipe.name}</CardTitle>
-                </CardHeader>
+            <Card>
+              <CardHeader>
+                <div className="flex justify-between">
+                  <CardTitle>{day}</CardTitle>
+                  <Switch checked={!disabled} onCheckedChange={(checked) => setDisabledDays(set(index, !checked))} />
+                </div>
+              </CardHeader>
+              {!disabled ? <>
                 <CardContent>
-                  <p>{recipe.instructions}</p>
-                  <div className="mt-2">
-                    {recipe.tags.map((tag) => (
-                      <Button key={tag} variant="secondary" size="sm" className="mr-2">
-                        {tag}
-                      </Button>
-                    ))}
+                  <div className="flex justify-between items-baseline">
+                    <div className="flex items-baseline gap-4">
+                      <div className="text-l">{recipe.name}</div>
+                      <div className="mt-2">
+                        {recipe.tags.map((tag) => (
+                          <Button key={tag} variant="secondary" size="sm" className="mr-2">
+                            {tag}
+                          </Button>
+                        ))}
+                      </div>
+                    </div>
+                    <Button onClick={() => randomizeOne(index)}>Randomize</Button>
                   </div>
                 </CardContent>
-              </Card>
-            </div>
+              </> : null}
+            </Card>
           );
         })}
       </div>
