@@ -8,16 +8,36 @@ import { FunctionComponent, useCallback, useEffect, useState } from 'react';
 import * as schema from "@/db/schema"
 import { set, stubFalse, times, truncate } from "lodash/fp";
 import { Switch } from "@/components/ui/switch";
+import { z } from "zod";
 
-const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] as const;
+type DayOfWeek = typeof daysOfWeek[number]
 
 const fetchRecipes = async (count: number, excludeIds: number[]): Promise<schema.Recipe[]> => {
   const { data } = await axios.get("/api/recipes?" + queryString.stringify({ count, excludeIds: excludeIds.join(",") }))
   return data
 }
-export const WeeklyRecipePlanner: FunctionComponent<{ initialRecipes: Recipe[] }> = ({ initialRecipes }) => {
-  const [recipes, setRecipes] = useState<Recipe[]>(initialRecipes)
-  const [disabledDays, setDisabledDays] = useState<boolean[]>(() => times(stubFalse, daysOfWeek.length))
+
+
+type DayState = {
+  day: DayOfWeek
+  enabled: boolean
+  recipe: Recipe | undefined
+}
+
+
+export const WeeklyRecipePlanner: FunctionComponent = () => {
+  // const [disabledDays, setDisabledDays] = useState<boolean[]>(() => times(stubFalse, daysOfWeek.length))
+  const [days, setDays] = useState<DayState[]>(() => {
+    const storedValue = localStorage.getItem("weeklyRecipePlannerState")
+    return storedValue ? JSON.parse(storedValue) : []
+  })
+
+  useEffect(() => {
+    if (!recipes.length) return
+    localStorage.setItem("recipes", JSON.stringify(recipes))
+  }, [recipes])
+
   const randomizeAll = useCallback(async () => {
     const recipes = await fetchRecipes(daysOfWeek.length, [])
     setRecipes(recipes)
@@ -27,6 +47,11 @@ export const WeeklyRecipePlanner: FunctionComponent<{ initialRecipes: Recipe[] }
     const [recipe] = await fetchRecipes(1, [])
     if (!recipe) return
     setRecipes(set(index, recipe))
+  }, [])
+
+  useEffect(() => {
+    if (recipes.length) return
+    randomizeAll()
   }, [])
 
   return (
