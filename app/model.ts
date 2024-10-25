@@ -14,3 +14,9 @@ export const RecipeInput = z.object({
 });
 
 export type RecipeInput = z.infer<typeof RecipeInput>
+
+export const ImportInput = z.object({
+  url: z.string().url()
+})
+
+export type ImportInput = z.infer<typeof ImportInput>
